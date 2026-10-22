@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c8c09a">
+  <meta name="description" content="AERØ — arquivo pessoal de liverys e arte automotiva.">
+  <title>AERØ // Automotive Visual Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="AERØ início">
+        <span class="brand-mark">AER<span>Ø</span></span>
+        <span class="brand-copy"><strong>AERØ</strong><small>AUTOMOTIVE VISUAL ARCHIVE</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">MENU <span>＋</span></button>
+      <nav id="mainNav" class="nav" aria-label="Navegação principal">
+        <a href="#home" data-nav="home" class="active">HOME</a>
+        <a href="#livery" data-nav="livery">LIVERY</a>
+        <a href="#virtual" data-nav="virtual">VIRTUAL TUNING</a>
+        <a href="#works" data-nav="works">PROJECTS</a>
+        <a href="#about" data-nav="about">ABOUT</a>
+        <a href="#contact" data-nav="contact">CONTACT <span class="nav-arrow">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <aside class="side-index" aria-label="Índice do arquivo">
+        <div class="stamp">AERØ<br><span>FILE INDEX</span></div>
+        <p class="side-title">DIGITAL GARAGE</p>
+        <ol><li><a href="#home">00 / HOME</a></li><li><a href="#livery">01 / LIVERY</a></li><li><a href="#virtual">02 / VIRTUAL TUNING</a></li><li><a href="#works">03 / PROJECTS</a></li></ol>
+        <div class="side-note">PORTFOLIO EM CONSTRUÇÃO.<br>TRABALHOS ORIGINAIS EM BREVE.</div>
+        <p class="side-title">ELSEWHERE</p><a class="side-link" href="#contact">CONTACT ↗</a>
+      </aside>
+      <section class="view active" id="home" aria-labelledby="heroTitle">
+        <div class="eyebrow"><span class="status-dot"></span> INDEPENDENT AUTOMOTIVE ARTIST <span class="eyebrow-line"></span> EST. 20XX</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">ISSUE 001 / DIGITAL MACHINES</p>
+            <h1 id="heroTitle">BUILT<br><span>TO</span> STAND<br>OUT<span class="blue-dot">.</span></h1>
+            <p class="intro">Livery design, virtual tuning &amp; automotive visual experiments, filed from an independent digital garage.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#works"><span>EXPLORE THE ARCHIVE</span><b>↘</b></a>
+              <a class="text-link" href="#about">MEET THE ARTIST <span>↗</span></a>
+            </div>
+            <div class="hero-meta">
+              <div><small>DISCIPLINE</small><strong>LIVERY / VIRTUAL TUNING</strong></div>
+              <div><small>VISUAL ERA</small><strong>90s — 00s INSPIRED</strong></div>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="frame-top"><span>FIG. 001 — VISUAL SYSTEM</span><span>NO. 0001</span></div>
+            <div class="art-placeholder hero-placeholder" role="img" aria-label="Espaço reservado para a arte principal do artista">
+              <div class="placeholder-cross">＋</div>
+              <div class="placeholder-label">EXAMPLE IMAGE / 001</div>
+              <div class="placeholder-sub">REPLACE WITH ORIGINAL ARTWORK</div>
+              <div class="placeholder-grid"></div>
+              <div class="placeholder-scan"></div>
+            </div>
+            <div class="frame-bottom"><span>IMAGE NOT INSTALLED</span><span class="signal">SIGNAL <i></i><i></i><i></i><i></i></span></div>
+            <div class="vertical-label">AERØ // VISUAL ARCHIVE</div>
+          </div>
+        </div>
+        <div class="ticker" aria-label="Especialidades">
+          <div class="ticker-track"><span>LIVERY DESIGN</span><b>✳</b><span>VIRTUAL TUNING</span><b>✳</b><span>JDM CULTURE</span><b>✳</b><span>DIGITAL ART</span><b>✳</b><span>LIVERY DESIGN</span><b>✳</b><span>VIRTUAL TUNING</span><b>✳</b><span>JDM CULTURE</span><b>✳</b><span>DIGITAL ART</span><b>✳</b></div>
+        </div>
+        <section class="featured-strip">
+          <div class="section-heading"><div><p class="kicker">SELECTED FILES / PLACEHOLDERS</p><h2>THE ARCHIVE<span class="blue-dot">.</span></h2></div><a class="text-link" href="#works">VIEW ALL PROJECTS <span>↗</span></a></div>
+          <div class="mini-grid" id="featuredGrid"></div>
+        </section>
+      </section>
+
+      <section class="view" id="livery" aria-labelledby="liveryTitle"><div class="page-heading"><p class="kicker">01 / STRIPES, MARKS &amp; IDENTITY</p><h1 id="liveryTitle">LIVERY <span>FILES</span><b>.</b></h1><p>Projetos de pintura, adesivagem e identidade visual automotiva. O arquivo abaixo está pronto para receber as artes reais.</p></div><div class="archive-grid" id="liveryGrid"></div></section>
+      <section class="view" id="virtual" aria-labelledby="virtualTitle"><div class="page-heading"><p class="kicker">02 / DIGITAL BODYWORK</p><h1 id="virtualTitle">VIRTUAL <span>TUNING</span><b>.</b></h1><p>Montagens e experimentos de oficina digital, apresentados como páginas de uma revista independente.</p></div><div class="archive-grid" id="virtualGrid"></div></section>
+
+      <section class="view" id="works" aria-labelledby="worksTitle">
+        <div class="page-heading">
+          <p class="kicker">INDEX / DIGITAL AUTOMOTIVE ART</p>
+          <h1 id="worksTitle">THE <span>ARCHIVE</span><b>.</b></h1>
+          <p>Uma coleção em construção. Cada espaço será preenchido com trabalhos reais do artista.</p>
+        </div>
+        <div class="filter-bar">
+          <span>FILTER BY DISCIPLINE</span>
+          <div class="filter-buttons" role="group" aria-label="Filtrar trabalhos">
+            <button class="filter-button active" data-filter="all">ALL FILES <i>03</i></button>
+            <button class="filter-button" data-filter="livery">LIVERY</button>
+            <button class="filter-button" data-filter="virtual">VIRTUAL TUNING</button>
+            <button class="filter-button" data-filter="concept">CONCEPT</button>
+          </div>
+        </div>
+        <div class="archive-grid" id="archiveGrid"></div>
+        <p class="archive-note"><span class="status-dot"></span> ARCHIVE STATUS: AWAITING ORIGINAL ARTWORK</p>
+      </section>
+
+      <section class="view" id="about" aria-labelledby="aboutTitle">
+        <div class="page-heading">
+          <p class="kicker">PERSON BEHIND THE PIXELS</p>
+          <h1 id="aboutTitle">ABOUT <span>AERØ</span><b>.</b></h1>
+        </div>
+        <div class="about-layout">
+          <div class="about-visual art-placeholder" role="img" aria-label="Espaço reservado para imagem ou retrato artístico">
+            <div class="placeholder-cross">＋</div><div class="placeholder-label">ARTIST PROFILE / 000</div><div class="placeholder-sub">PROFILE IMAGE OPTIONAL</div><div class="placeholder-grid"></div>
+          </div>
+          <div class="about-copy">
+            <p class="kicker">AN INDEPENDENT VISUAL PRACTICE</p>
+            <h2>Machines are the canvas.<br><span>Style is the signature.</span></h2>
+            <p>Este espaço é a apresentação do artista AERØ. Aqui entra a história real por trás das liverys, referências, ferramentas e ideias que movem cada projeto.</p>
+            <p>Sem biografia inventada, sem créditos presumidos — só o trabalho e a visão do artista, apresentados com uma estética inspirada na cultura automotiva digital dos anos 90 e 2000.</p>
+            <div class="spec-list">
+              <div><span>01 / FOCUS</span><strong>LIVERY DESIGN</strong></div>
+              <div><span>02 / PRACTICE</span><strong>VIRTUAL TUNING</strong></div>
+              <div><span>03 / INFLUENCE</span><strong>90s–00s CAR CULTURE</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="contact" aria-labelledby="contactTitle">
+        <div class="contact-panel">
+          <p class="kicker">OPEN A CHANNEL</p>
+          <h1 id="contactTitle">GOT A<br><span>PROJECT?</span><b>↗</b></h1>
+          <p>Para encomendas, colaborações ou perguntas sobre um trabalho, entre em contato pelo canal oficial do artista.</p>
+          <div class="contact-links" id="contactLinks">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">INSTAGRAM <span>↗</span></a>
+            <a href="https://www.flickr.com/" target="_blank" rel="noreferrer">FLICKR <span>↗</span></a>
+          </div>
+          <p class="small-note">LINKS PROVISÓRIOS — substituir pelos perfis reais antes de publicar.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="#home" class="footer-brand">AERØ<span>®</span></a>
+      <span>INDEPENDENT AUTOMOTIVE ART ARCHIVE</span>
+      <span>© <span id="year"></span> / ALL FILES RESERVED</span>
+    </footer>
+  </div>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-head"><span id="dialogIndex">FILE / 001</span><button id="closeDialog" aria-label="Fechar detalhes">CLOSE <b>×</b></button></div>
+    <div class="dialog-art art-placeholder" id="dialogArt" role="img" aria-label="Espaço reservado para arte original">
+      <div class="placeholder-cross">＋</div><div class="placeholder-label">ARTWORK SLOT</div><div class="placeholder-sub">ORIGINAL ARTWORK TO BE ADDED</div><div class="placeholder-grid"></div>
+    </div>
+    <div class="dialog-info"><div><p class="kicker" id="dialogCategory">LIVERY / DIGITAL ART</p><h2 id="dialogTitle">PROJECT TITLE</h2><p id="dialogDescription">Descrição do projeto será adicionada pelo artista.</p></div><div class="dialog-controls"><button id="prevProject" aria-label="Projeto anterior">← PREV</button><button id="nextProject" aria-label="Próximo projeto">NEXT →</button></div></div>
+    <p class="small-note">MODELO DE APRESENTAÇÃO — nenhum trabalho artístico foi atribuído ou inventado.</p>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
